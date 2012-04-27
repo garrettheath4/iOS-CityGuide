@@ -72,6 +72,10 @@
 #pragma mark UITableViewDelegate Methods
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    City *thisCity = [cities objectAtIndex:indexPath.row];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:thisCity.cityName message:thisCity.cityDescription delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [alert show];
+
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 
