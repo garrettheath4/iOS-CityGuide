@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddCityController : UIViewController
+@interface AddCityController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+    IBOutlet UITableView     *tableView;
+    IBOutlet UITableViewCell *nameCell;
+    IBOutlet UITableViewCell *descriptionCell;
+}
 
 @end

@@ -23,10 +23,16 @@
     return self;
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+#pragma mark - View lifecycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.title = @"New City";
 }
 
 - (void)viewDidUnload
@@ -41,4 +47,36 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma mark UITableViewDataSource Methods
+
+- (UITableViewCell *)tableView:(UITableView *)tv
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = nil;
+    if( indexPath.row == 0 ) {
+        cell = nameCell;
+    } else {
+        cell = descriptionCell;
+    }
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tv
+ numberOfRowsInSection:(NSInteger)section {
+    return 2;
+}
+
+#pragma mark UITableViewDelegate Methods
+
+- (CGFloat)tableView:(UITableView *)tv heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat height;
+    if( indexPath.row == 0 ) {
+        height = 44;
+    } else {
+        height = 362;
+    }
+    return height;
+}
+
 @end
+
+
