@@ -15,6 +15,11 @@
 		68016DC5154A699200C94850 /* CGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68016DC4154A699200C94850 /* CGAppDelegate.m */; };
 		68016DC8154A699200C94850 /* CGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68016DC7154A699200C94850 /* CGViewController.m */; };
 		68016DCB154A699200C94850 /* CGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68016DC9154A699200C94850 /* CGViewController.xib */; };
+		6860EF9A154A7BBC00E67E7E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860EF99154A7BBC00E67E7E /* City.m */; };
+		6860EF9F154A83DB00E67E7E /* London.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6860EF9B154A83DA00E67E7E /* London.jpg */; };
+		6860EFA0154A83DB00E67E7E /* Madrid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6860EF9C154A83DA00E67E7E /* Madrid.jpg */; };
+		6860EFA1154A83DB00E67E7E /* SanFrancisco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6860EF9D154A83DB00E67E7E /* SanFrancisco.jpg */; };
+		6860EFA2154A83DB00E67E7E /* Sydney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6860EF9E154A83DB00E67E7E /* Sydney.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,12 @@
 		68016DC7154A699200C94850 /* CGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGViewController.m; sourceTree = "<group>"; };
 		68016DCA154A699200C94850 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CGViewController.xib; sourceTree = "<group>"; };
 		6860EF96154A779B00E67E7E /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
+		6860EF98154A7BBC00E67E7E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		6860EF99154A7BBC00E67E7E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		6860EF9B154A83DA00E67E7E /* London.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = London.jpg; path = ../London.jpg; sourceTree = "<group>"; };
+		6860EF9C154A83DA00E67E7E /* Madrid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Madrid.jpg; path = ../Madrid.jpg; sourceTree = "<group>"; };
+		6860EF9D154A83DB00E67E7E /* SanFrancisco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SanFrancisco.jpg; path = ../SanFrancisco.jpg; sourceTree = "<group>"; };
+		6860EF9E154A83DB00E67E7E /* Sydney.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sydney.jpg; path = ../Sydney.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,8 @@
 		68016DA5154A699200C94850 = {
 			isa = PBXGroup;
 			children = (
+				6860EF98154A7BBC00E67E7E /* City.h */,
+				6860EF99154A7BBC00E67E7E /* City.m */,
 				6860EF96154A779B00E67E7E /* README */,
 				68016DBA154A699200C94850 /* CityGuide */,
 				68016DB3154A699200C94850 /* Frameworks */,
@@ -92,6 +105,10 @@
 		68016DBB154A699200C94850 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6860EF9B154A83DA00E67E7E /* London.jpg */,
+				6860EF9C154A83DA00E67E7E /* Madrid.jpg */,
+				6860EF9D154A83DB00E67E7E /* SanFrancisco.jpg */,
+				6860EF9E154A83DB00E67E7E /* Sydney.jpg */,
 				68016DBC154A699200C94850 /* CityGuide-Info.plist */,
 				68016DBD154A699200C94850 /* InfoPlist.strings */,
 				68016DC0154A699200C94850 /* main.m */,
@@ -154,6 +171,10 @@
 			files = (
 				68016DBF154A699200C94850 /* InfoPlist.strings in Resources */,
 				68016DCB154A699200C94850 /* CGViewController.xib in Resources */,
+				6860EF9F154A83DB00E67E7E /* London.jpg in Resources */,
+				6860EFA0154A83DB00E67E7E /* Madrid.jpg in Resources */,
+				6860EFA1154A83DB00E67E7E /* SanFrancisco.jpg in Resources */,
+				6860EFA2154A83DB00E67E7E /* Sydney.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +188,7 @@
 				68016DC1154A699200C94850 /* main.m in Sources */,
 				68016DC5154A699200C94850 /* CGAppDelegate.m in Sources */,
 				68016DC8154A699200C94850 /* CGViewController.m in Sources */,
+				6860EF9A154A7BBC00E67E7E /* City.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

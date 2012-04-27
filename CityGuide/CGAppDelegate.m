@@ -7,18 +7,41 @@
 //
 
 #import "CGAppDelegate.h"
-
 #import "CGViewController.h"
+#import "City.h"
 
 @implementation CGAppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+@synthesize cities = _cities;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    City *london = [[City alloc] init];
+    london.cityName = @"London";
+    london.cityDescription = @"The capital of the United Kingdom and England.";
+    london.cityPicture = [UIImage imageNamed:@"London.jpg"];
+    
+    City *sanFrancisco = [[City alloc] init];
+    sanFrancisco.cityName = @"San Francisco";
+    sanFrancisco.cityDescription = @"The heart of the San Francisco Bay Area.";
+    sanFrancisco.cityPicture = [UIImage imageNamed:@"SanFrancisco.jpg"];
+    
+    City *sydney = [[City alloc] init];
+    sydney.cityName = @"Sydney";
+    sydney.cityDescription = @"The largest city in Australia.";
+    sydney.cityPicture = [UIImage imageNamed:@"Sydney.jpg"];
+    
+    City *madrid = [[City alloc] init];
+    madrid.cityName = @"Madrid";
+    madrid.cityDescription = @"The capital and largest city of Spain.";
+    madrid.cityPicture = [UIImage imageNamed:@"Madrid.jpg"];
+    
+    self.cities = [[NSMutableArray alloc] initWithObjects:london, sanFrancisco, sydney, madrid, nil];
+    
     self.viewController = [[CGViewController alloc] initWithNibName:@"CGViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
