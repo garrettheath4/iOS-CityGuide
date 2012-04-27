@@ -26,6 +26,7 @@
     self.title = @"City Guide";
     CGAppDelegate *deligate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
     cities = deligate.cities;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
@@ -55,6 +56,12 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    [tableView setEditing:editing animated:animated];
+    [tableView reloadData];
+}
+
 #pragma mark UITableViewDataSource Methods
 
 - (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -62,13 +69,24 @@
     if( nil == cell ) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    City *thisCity = [cities objectAtIndex:indexPath.row];
-    cell.textLabel.text = thisCity.cityName;
+    if (indexPath.row < cities.count) {
+        City *thisCity = [cities objectAtIndex:indexPath.row];
+        cell.textLabel.text = thisCity.cityName;
+    } else {
+        cell.textLabel.text = @"Add New City...";
+        cell.textLabel.textColor = [UIColor lightGrayColor];
+        cell.editingAccessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [cities count];
+    NSInteger count = cities.count;
+    if (self.editing) {
+        count = count+1;
+    }
+    return count;
 }
 
 #pragma mark UITableViewDelegate Methods
@@ -79,6 +97,14 @@
     [delegate.navController pushViewController:city animated:YES];
 
     [tv deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tv editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row < cities.count) {
+        return UITableViewCellEditingStyleDelete;
+    } else {
+        return UITableViewCellEditingStyleInsert;
+    }
 }
 
 @end
