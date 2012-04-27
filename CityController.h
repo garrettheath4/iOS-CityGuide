@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CityController : UIViewController
+@interface CityController : UIViewController {
+    NSIndexPath *index;
+    
+    IBOutlet UIImageView *pictureView;
+    IBOutlet UITextView  *descriptionView;
+}
+
+- (id)initWithIndexPath:(NSIndexPath *)indexPath;
 
 @end

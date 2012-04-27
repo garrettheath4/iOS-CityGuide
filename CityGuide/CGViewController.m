@@ -75,7 +75,7 @@
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
-    CityController *city = [[CityController alloc] init];
+    CityController *city = [[CityController alloc] initWithIndexPath:indexPath];
     [delegate.navController pushViewController:city animated:YES];
 
     [tv deselectRowAtIndexPath:indexPath animated:YES];
