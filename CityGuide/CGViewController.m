@@ -56,6 +56,7 @@
     if( nil == cell ) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
+    cell.textLabel.text = @"Testing";
     return cell;
 }
 
@@ -63,4 +64,28 @@
     return 3;
 }
 
+#pragma mark UITableViewDelegate Methods
+
+- (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tv deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
