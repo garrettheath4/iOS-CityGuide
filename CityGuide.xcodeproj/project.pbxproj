@@ -22,6 +22,8 @@
 		6860EFA2154A83DB00E67E7E /* Sydney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6860EF9E154A83DB00E67E7E /* Sydney.jpg */; };
 		6860EFA6154A8DA500E67E7E /* CityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860EFA4154A8DA500E67E7E /* CityController.m */; };
 		6860EFA7154A8DA500E67E7E /* CityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6860EFA5154A8DA500E67E7E /* CityController.xib */; };
+		6860EFAB154AD11800E67E7E /* AddCityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860EFA9154AD11800E67E7E /* AddCityController.m */; };
+		6860EFAC154AD11800E67E7E /* AddCityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6860EFAA154AD11800E67E7E /* AddCityController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,9 @@
 		6860EFA3154A8DA500E67E7E /* CityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityController.h; path = ../CityController.h; sourceTree = "<group>"; };
 		6860EFA4154A8DA500E67E7E /* CityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityController.m; path = ../CityController.m; sourceTree = "<group>"; };
 		6860EFA5154A8DA500E67E7E /* CityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CityController.xib; path = ../CityController.xib; sourceTree = "<group>"; };
+		6860EFA8154AD11800E67E7E /* AddCityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCityController.h; sourceTree = "<group>"; };
+		6860EFA9154AD11800E67E7E /* AddCityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCityController.m; sourceTree = "<group>"; };
+		6860EFAA154AD11800E67E7E /* AddCityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCityController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,9 @@
 				6860EFA5154A8DA500E67E7E /* CityController.xib */,
 				6860EF98154A7BBC00E67E7E /* City.h */,
 				6860EF99154A7BBC00E67E7E /* City.m */,
+				6860EFA8154AD11800E67E7E /* AddCityController.h */,
+				6860EFA9154AD11800E67E7E /* AddCityController.m */,
+				6860EFAA154AD11800E67E7E /* AddCityController.xib */,
 			);
 			path = CityGuide;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 				6860EFA1154A83DB00E67E7E /* SanFrancisco.jpg in Resources */,
 				6860EFA2154A83DB00E67E7E /* Sydney.jpg in Resources */,
 				6860EFA7154A8DA500E67E7E /* CityController.xib in Resources */,
+				6860EFAC154AD11800E67E7E /* AddCityController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +208,7 @@
 				68016DC8154A699200C94850 /* CGViewController.m in Sources */,
 				6860EF9A154A7BBC00E67E7E /* City.m in Sources */,
 				6860EFA6154A8DA500E67E7E /* CityController.m in Sources */,
+				6860EFAB154AD11800E67E7E /* AddCityController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

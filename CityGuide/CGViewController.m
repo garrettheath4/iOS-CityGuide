@@ -10,6 +10,7 @@
 #import "CGAppDelegate.h"
 #import "City.h"
 #import "CityController.h"
+#import "AddCityController.h"
 
 @implementation CGViewController
 @synthesize tableView;
@@ -56,19 +57,51 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
-    if (editing != self.editing) {
+-(void)setEditing:(BOOL)editing animated:(BOOL) animated {
+    if( editing != self.editing ) {
         [super setEditing:editing animated:animated];
         [tableView setEditing:editing animated:animated];
-        
-        NSArray *indexes = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:cities.count inSection:0]];
-        if (editing == YES) {
-            [tableView insertRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationLeft];
+        NSMutableArray *indices = [[NSMutableArray alloc] init];
+        for(int i=0; i < cities.count; i++ ) {
+            [indices addObject:[NSIndexPath indexPathForRow:i inSection:0]];
+        }
+        NSArray *lastIndex = [NSArray
+                              arrayWithObject:[NSIndexPath
+                                               indexPathForRow:cities.count inSection:0]];
+        if (editing == YES ) {
+            for(int i=0; i < cities.count; i++ ) {
+                UITableViewCell *cell =
+                [tableView
+                 cellForRowAtIndexPath:[indices objectAtIndex:i]];
+                [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+            }
+            [tableView insertRowsAtIndexPaths:lastIndex
+                             withRowAnimation:UITableViewRowAnimationLeft];
         } else {
-            [tableView deleteRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationLeft];
+            for(int i=0; i < cities.count; i++ ) {
+                UITableViewCell *cell =
+                [tableView
+                 cellForRowAtIndexPath:[indices objectAtIndex:i]];
+                [cell setSelectionStyle:UITableViewCellSelectionStyleBlue];
+            }
+            [tableView deleteRowsAtIndexPaths:lastIndex withRowAnimation:UITableViewRowAnimationLeft];
         }
     }
 }
+
+//- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+//    if (editing != self.editing) {
+//        [super setEditing:editing animated:animated];
+//        [tableView setEditing:editing animated:animated];
+//        
+//        NSArray *indexes = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:cities.count inSection:0]];
+//        if (editing == YES) {
+//            [tableView insertRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationLeft];
+//        } else {
+//            [tableView deleteRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationLeft];
+//        }
+//    }
+//}
 
 #pragma mark UITableViewDataSource Methods
 
@@ -108,9 +141,15 @@
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
-    CityController *city = [[CityController alloc] initWithIndexPath:indexPath];
-    [delegate.navController pushViewController:city animated:YES];
-
+    
+    if (indexPath.row < cities.count && !self.editing) {
+        CityController *city = [[CityController alloc] initWithIndexPath:indexPath];
+        [delegate.navController pushViewController:city animated:YES];
+    }
+    if (indexPath.row == cities.count && self.editing) {
+        AddCityController *addCity = [[AddCityController alloc] init];
+        [delegate.navController pushViewController:addCity animated:YES];
+    }
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 
