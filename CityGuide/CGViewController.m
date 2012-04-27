@@ -97,6 +97,13 @@
     return count;
 }
 
+- (void)tableView:(UITableView *)tv commitEditingStyle:(UITableViewCellEditingStyle)editing forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editing == UITableViewCellEditingStyleDelete) {
+        [cities removeObjectAtIndex:indexPath.row];
+        [tv deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    }
+}
+
 #pragma mark UITableViewDelegate Methods
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
