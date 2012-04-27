@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68016DB5154A699200C94850 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68016DB4154A699200C94850 /* UIKit.framework */; };
+		68016DB7154A699200C94850 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68016DB6154A699200C94850 /* Foundation.framework */; };
+		68016DB9154A699200C94850 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68016DB8154A699200C94850 /* CoreGraphics.framework */; };
+		68016DBF154A699200C94850 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68016DBD154A699200C94850 /* InfoPlist.strings */; };
+		68016DC1154A699200C94850 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68016DC0154A699200C94850 /* main.m */; };
+		68016DC5154A699200C94850 /* CGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68016DC4154A699200C94850 /* CGAppDelegate.m */; };
+		68016DC8154A699200C94850 /* CGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68016DC7154A699200C94850 /* CGViewController.m */; };
+		68016DCB154A699200C94850 /* CGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68016DC9154A699200C94850 /* CGViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68016DB0154A699200C94850 /* CityGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68016DB4154A699200C94850 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68016DB6154A699200C94850 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68016DB8154A699200C94850 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68016DBC154A699200C94850 /* CityGuide-Info.plist */ = {isa = PBXFileReference; path = "CityGuide-Info.plist"; sourceTree = "<group>"; };
+		68016DBE154A699200C94850 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68016DC0154A699200C94850 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68016DC2154A699200C94850 /* CityGuide-Prefix.pch */ = {isa = PBXFileReference; path = "CityGuide-Prefix.pch"; sourceTree = "<group>"; };
+		68016DC3154A699200C94850 /* CGAppDelegate.h */ = {isa = PBXFileReference; path = CGAppDelegate.h; sourceTree = "<group>"; };
+		68016DC4154A699200C94850 /* CGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGAppDelegate.m; sourceTree = "<group>"; };
+		68016DC6154A699200C94850 /* CGViewController.h */ = {isa = PBXFileReference; path = CGViewController.h; sourceTree = "<group>"; };
+		68016DC7154A699200C94850 /* CGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGViewController.m; sourceTree = "<group>"; };
+		68016DCA154A699200C94850 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CGViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68016DAD154A699200C94850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68016DB5154A699200C94850 /* UIKit.framework in Frameworks */,
+				68016DB7154A699200C94850 /* Foundation.framework in Frameworks */,
+				68016DB9154A699200C94850 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68016DA5154A699200C94850 = {
+			isa = PBXGroup;
+			children = (
+				68016DBA154A699200C94850 /* CityGuide */,
+				68016DB3154A699200C94850 /* Frameworks */,
+				68016DB1154A699200C94850 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68016DB1154A699200C94850 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68016DB0154A699200C94850 /* CityGuide.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68016DB3154A699200C94850 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68016DB4154A699200C94850 /* UIKit.framework */,
+				68016DB6154A699200C94850 /* Foundation.framework */,
+				68016DB8154A699200C94850 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68016DBA154A699200C94850 /* CityGuide */ = {
+			isa = PBXGroup;
+			children = (
+				68016DC3154A699200C94850 /* CGAppDelegate.h */,
+				68016DC4154A699200C94850 /* CGAppDelegate.m */,
+				68016DC6154A699200C94850 /* CGViewController.h */,
+				68016DC7154A699200C94850 /* CGViewController.m */,
+				68016DC9154A699200C94850 /* CGViewController.xib */,
+				68016DBB154A699200C94850 /* Supporting Files */,
+			);
+			path = CityGuide;
+			sourceTree = "<group>";
+		};
+		68016DBB154A699200C94850 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68016DBC154A699200C94850 /* CityGuide-Info.plist */,
+				68016DBD154A699200C94850 /* InfoPlist.strings */,
+				68016DC0154A699200C94850 /* main.m */,
+				68016DC2154A699200C94850 /* CityGuide-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68016DAF154A699200C94850 /* CityGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68016DCE154A699200C94850 /* Build configuration list for PBXNativeTarget "CityGuide" */;
+			buildPhases = (
+				68016DAC154A699200C94850 /* Sources */,
+				68016DAD154A699200C94850 /* Frameworks */,
+				68016DAE154A699200C94850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityGuide;
+			productName = CityGuide;
+			productReference = 68016DB0154A699200C94850 /* CityGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68016DA7154A699200C94850 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CG;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Washington and Lee University";
+			};
+			buildConfigurationList = 68016DAA154A699200C94850 /* Build configuration list for PBXProject "CityGuide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 68016DA5154A699200C94850;
+			productRefGroup = 68016DB1154A699200C94850 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68016DAF154A699200C94850 /* CityGuide */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68016DAE154A699200C94850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68016DBF154A699200C94850 /* InfoPlist.strings in Resources */,
+				68016DCB154A699200C94850 /* CGViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68016DAC154A699200C94850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68016DC1154A699200C94850 /* main.m in Sources */,
+				68016DC5154A699200C94850 /* CGAppDelegate.m in Sources */,
+				68016DC8154A699200C94850 /* CGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68016DBD154A699200C94850 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68016DBE154A699200C94850 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		68016DC9154A699200C94850 /* CGViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68016DCA154A699200C94850 /* en */,
+			);
+			name = CGViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68016DCC154A699200C94850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68016DCD154A699200C94850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68016DCF154A699200C94850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CityGuide/CityGuide-Prefix.pch";
+				INFOPLIST_FILE = "CityGuide/CityGuide-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		68016DD0154A699200C94850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CityGuide/CityGuide-Prefix.pch";
+				INFOPLIST_FILE = "CityGuide/CityGuide-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68016DAA154A699200C94850 /* Build configuration list for PBXProject "CityGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68016DCC154A699200C94850 /* Debug */,
+				68016DCD154A699200C94850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68016DCE154A699200C94850 /* Build configuration list for PBXNativeTarget "CityGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68016DCF154A699200C94850 /* Debug */,
+				68016DD0154A699200C94850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68016DA7154A699200C94850 /* Project object */;
+}
