@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CGViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface CGViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+    NSMutableArray *cities;
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

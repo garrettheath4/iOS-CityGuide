@@ -7,6 +7,8 @@
 //
 
 #import "CGViewController.h"
+#import "CGAppDelegate.h"
+#import "City.h"
 
 @implementation CGViewController
 @synthesize tableView;
@@ -20,6 +22,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    CGAppDelegate *deligate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
+    cities = deligate.cities;
 }
 
 - (void)viewDidUnload
@@ -56,12 +60,13 @@
     if( nil == cell ) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = @"Testing";
+    City *thisCity = [cities objectAtIndex:indexPath.row];
+    cell.textLabel.text = thisCity.cityName;
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return [cities count];
 }
 
 #pragma mark UITableViewDelegate Methods
