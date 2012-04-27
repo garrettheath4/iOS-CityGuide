@@ -41,7 +41,12 @@
     self.title = thisCity.cityName;
     descriptionView.text = thisCity.cityDescription;
     descriptionView.editable = NO;
-    pictureView.image = thisCity.cityPicture;
+    
+    UIImage *image = thisCity.cityPicture;
+    if (image == nil) {
+        image = [UIImage imageNamed:@"city_clipart.jpg"];
+    }
+    pictureView.image = image;
 }
 
 - (void)viewDidUnload

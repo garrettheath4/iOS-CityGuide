@@ -24,6 +24,7 @@
 		6860EFA7154A8DA500E67E7E /* CityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6860EFA5154A8DA500E67E7E /* CityController.xib */; };
 		6860EFAB154AD11800E67E7E /* AddCityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860EFA9154AD11800E67E7E /* AddCityController.m */; };
 		6860EFAC154AD11800E67E7E /* AddCityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6860EFAA154AD11800E67E7E /* AddCityController.xib */; };
+		6860EFAE154AEB1500E67E7E /* city_clipart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6860EFAD154AEB1500E67E7E /* city_clipart.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		6860EFA8154AD11800E67E7E /* AddCityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCityController.h; sourceTree = "<group>"; };
 		6860EFA9154AD11800E67E7E /* AddCityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCityController.m; sourceTree = "<group>"; };
 		6860EFAA154AD11800E67E7E /* AddCityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCityController.xib; sourceTree = "<group>"; };
+		6860EFAD154AEB1500E67E7E /* city_clipart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = city_clipart.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				6860EF9C154A83DA00E67E7E /* Madrid.jpg */,
 				6860EF9D154A83DB00E67E7E /* SanFrancisco.jpg */,
 				6860EF9E154A83DB00E67E7E /* Sydney.jpg */,
+				6860EFAD154AEB1500E67E7E /* city_clipart.jpg */,
 				68016DBC154A699200C94850 /* CityGuide-Info.plist */,
 				68016DBD154A699200C94850 /* InfoPlist.strings */,
 				68016DC0154A699200C94850 /* main.m */,
@@ -193,6 +196,7 @@
 				6860EFA2154A83DB00E67E7E /* Sydney.jpg in Resources */,
 				6860EFA7154A8DA500E67E7E /* CityController.xib in Resources */,
 				6860EFAC154AD11800E67E7E /* AddCityController.xib in Resources */,
+				6860EFAE154AEB1500E67E7E /* city_clipart.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
