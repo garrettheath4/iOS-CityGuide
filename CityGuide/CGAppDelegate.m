@@ -14,6 +14,7 @@
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+@synthesize navController = _navController;
 @synthesize cities = _cities;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -43,7 +44,8 @@
     self.cities = [[NSMutableArray alloc] initWithObjects:london, sanFrancisco, sydney, madrid, nil];
     
     self.viewController = [[CGViewController alloc] initWithNibName:@"CGViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) CGViewController *viewController;
+@property (strong, nonatomic) UINavigationController *navController;
 @property (strong, nonatomic) NSMutableArray *cities;
 
 @end
