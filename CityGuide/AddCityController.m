@@ -7,6 +7,9 @@
 //
 
 #import "AddCityController.h"
+#import "CGAppDelegate.h"
+#import "CGViewController.h"
+#import "City.h"
 
 @interface AddCityController ()
 
@@ -27,12 +30,33 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)saveCity:(id)sender {
+    CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSMutableArray *cities = delegate.cities;
+    
+    UITextField *nameEntry = (UITextField *)[nameCell viewWithTag:777];
+    UITextView *descriptionEntry = (UITextView *)[descriptionCell viewWithTag:777];
+    
+    if (nameEntry.text.length > 0) {
+        City *newCity = [[City alloc] init];
+        newCity.cityName = nameEntry.text;
+        newCity.cityDescription = descriptionEntry.text;
+        newCity.cityPicture = nil;
+        [cities addObject:newCity];
+        
+        CGViewController *viewController = delegate.viewController;
+        [viewController.tableView reloadData];
+    }
+    [delegate.navController popViewControllerAnimated:YES];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"New City";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveCity:)];
 }
 
 - (void)viewDidUnload

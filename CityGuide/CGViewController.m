@@ -110,9 +110,16 @@
     if( nil == cell ) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
+    
+    NSLog( @"indexPath.row %d, cities.count = %d", indexPath.row, cities.count );
     if (indexPath.row < cities.count) {
         City *thisCity = [cities objectAtIndex:indexPath.row];
         cell.textLabel.text = thisCity.cityName;
+        cell.textLabel.textColor = [UIColor blackColor];
+        cell.editingAccessoryType = UITableViewCellAccessoryNone;
+        if (self.editing) {
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        }
     } else {
         cell.textLabel.text = @"Add New City...";
         cell.textLabel.textColor = [UIColor lightGrayColor];
