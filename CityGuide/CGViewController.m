@@ -9,6 +9,7 @@
 #import "CGViewController.h"
 #import "CGAppDelegate.h"
 #import "City.h"
+#import "CityController.h"
 
 @implementation CGViewController
 @synthesize tableView;
@@ -73,7 +74,9 @@
 #pragma mark UITableViewDelegate Methods
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //TODO: Add UINavigationController stuff here
+    CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
+    CityController *city = [[CityController alloc] init];
+    [delegate.navController pushViewController:city animated:YES];
 
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }

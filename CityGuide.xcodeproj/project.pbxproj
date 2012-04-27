@@ -20,6 +20,8 @@
 		6860EFA0154A83DB00E67E7E /* Madrid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6860EF9C154A83DA00E67E7E /* Madrid.jpg */; };
 		6860EFA1154A83DB00E67E7E /* SanFrancisco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6860EF9D154A83DB00E67E7E /* SanFrancisco.jpg */; };
 		6860EFA2154A83DB00E67E7E /* Sydney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6860EF9E154A83DB00E67E7E /* Sydney.jpg */; };
+		6860EFA6154A8DA500E67E7E /* CityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860EFA4154A8DA500E67E7E /* CityController.m */; };
+		6860EFA7154A8DA500E67E7E /* CityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6860EFA5154A8DA500E67E7E /* CityController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,9 @@
 		6860EF9C154A83DA00E67E7E /* Madrid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Madrid.jpg; path = ../Madrid.jpg; sourceTree = "<group>"; };
 		6860EF9D154A83DB00E67E7E /* SanFrancisco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SanFrancisco.jpg; path = ../SanFrancisco.jpg; sourceTree = "<group>"; };
 		6860EF9E154A83DB00E67E7E /* Sydney.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sydney.jpg; path = ../Sydney.jpg; sourceTree = "<group>"; };
+		6860EFA3154A8DA500E67E7E /* CityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityController.h; sourceTree = "<group>"; };
+		6860EFA4154A8DA500E67E7E /* CityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityController.m; sourceTree = "<group>"; };
+		6860EFA5154A8DA500E67E7E /* CityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,9 @@
 		68016DA5154A699200C94850 = {
 			isa = PBXGroup;
 			children = (
+				6860EFA3154A8DA500E67E7E /* CityController.h */,
+				6860EFA4154A8DA500E67E7E /* CityController.m */,
+				6860EFA5154A8DA500E67E7E /* CityController.xib */,
 				6860EF98154A7BBC00E67E7E /* City.h */,
 				6860EF99154A7BBC00E67E7E /* City.m */,
 				6860EF96154A779B00E67E7E /* README */,
@@ -175,6 +183,7 @@
 				6860EFA0154A83DB00E67E7E /* Madrid.jpg in Resources */,
 				6860EFA1154A83DB00E67E7E /* SanFrancisco.jpg in Resources */,
 				6860EFA2154A83DB00E67E7E /* Sydney.jpg in Resources */,
+				6860EFA7154A8DA500E67E7E /* CityController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +198,7 @@
 				68016DC5154A699200C94850 /* CGAppDelegate.m in Sources */,
 				68016DC8154A699200C94850 /* CGViewController.m in Sources */,
 				6860EF9A154A7BBC00E67E7E /* City.m in Sources */,
+				6860EFA6154A8DA500E67E7E /* CityController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
