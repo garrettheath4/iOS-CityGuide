@@ -31,6 +31,7 @@
 		68016DC6154A699200C94850 /* CGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGViewController.h; sourceTree = "<group>"; };
 		68016DC7154A699200C94850 /* CGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGViewController.m; sourceTree = "<group>"; };
 		68016DCA154A699200C94850 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CGViewController.xib; sourceTree = "<group>"; };
+		6860EF96154A779B00E67E7E /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +51,7 @@
 		68016DA5154A699200C94850 = {
 			isa = PBXGroup;
 			children = (
+				6860EF96154A779B00E67E7E /* README */,
 				68016DBA154A699200C94850 /* CityGuide */,
 				68016DB3154A699200C94850 /* Frameworks */,
 				68016DB1154A699200C94850 /* Products */,
@@ -276,6 +278,7 @@
 				68016DD0154A699200C94850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

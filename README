@@ -1,0 +1,24 @@
+Assignment #1: Table-View Based Applications
+
+To complete this task, read through Chapters 4-5 of the textbook and follow the
+instructions in Chapter 5 to complete the City Guide app. When you're done, zip
+up your CityGuide folder and email it to me as an attachment. If you have time,
+feel free to get creative and add features beyond the ones specified in the
+book. If you do this, be sure to tell me about these features in your email, so
+I can try them out.
+
+Here's a tip: instead of writing the whole first part of the app at once, take
+"baby steps", saving a copy of your entire project folder after each step so you
+can backtrack if needed:
+
+ 1. Get a basic empty app working (as you did with HelloWorld)
+ 2. Add the table view
+ 3. Add the code for the table view
+
+With these first few programming tasks, there may be a temptation to download
+and submit all or part of a solution from the web. Later, when you get into your
+actual, original project, I of course encourage you to incorporate solutions you
+find on the web, and to share them with others via the blog. But in the meantime
+I ask you to put in your email a version of the W&L Honor Pledge, stating that
+you did not use any resources beyond the instructions in the textbook to
+complete the assignment.
