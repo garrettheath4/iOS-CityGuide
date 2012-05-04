@@ -62,7 +62,7 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     [self dismissModalViewControllerAnimated:YES];
-    cityPicture = [info objectForKey:@"UIImagePickerControllerOriginalItem"];
+    cityPicture = [info objectForKey:UIImagePickerControllerOriginalImage];
     
     UIImageView *pictureView = (UIImageView *)[pictureCell viewWithTag:777];
     pictureView.image = cityPicture;
