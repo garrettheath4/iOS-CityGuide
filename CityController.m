@@ -44,7 +44,7 @@
     
     UIImage *image = thisCity.cityPicture;
     if (image == nil) {
-        image = [UIImage imageNamed:@"city_clipart.jpg"];
+        image = [UIImage imageNamed:@"QuestionMark.jpg"];
     }
     pictureView.image = image;
 }

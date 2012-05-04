@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddCityController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface AddCityController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     IBOutlet UITableView     *tableView;
     IBOutlet UITableViewCell *nameCell;
+    IBOutlet UITableViewCell *pictureCell;
     IBOutlet UITableViewCell *descriptionCell;
+    
+    UIImage *cityPicture;
+    UIImagePickerController *pickerController;
 }
 
-- (IBAction)saveCity:(id)sender;
+- (IBAction)addPicture:(id)sender;
 
 @end
