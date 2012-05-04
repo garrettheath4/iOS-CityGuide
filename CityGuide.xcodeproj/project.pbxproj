@@ -107,7 +107,6 @@
 				68016DC6154A699200C94850 /* CGViewController.h */,
 				68016DC7154A699200C94850 /* CGViewController.m */,
 				68016DC9154A699200C94850 /* CGViewController.xib */,
-				68016DBB154A699200C94850 /* Supporting Files */,
 				6860EFA3154A8DA500E67E7E /* CityController.h */,
 				6860EFA4154A8DA500E67E7E /* CityController.m */,
 				6860EFA5154A8DA500E67E7E /* CityController.xib */,
@@ -116,6 +115,7 @@
 				6860EFA8154AD11800E67E7E /* AddCityController.h */,
 				6860EFA9154AD11800E67E7E /* AddCityController.m */,
 				6860EFAA154AD11800E67E7E /* AddCityController.xib */,
+				68016DBB154A699200C94850 /* Supporting Files */,
 			);
 			path = CityGuide;
 			sourceTree = "<group>";

@@ -27,6 +27,7 @@
     self.title = @"City Guide";
     CGAppDelegate *deligate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
     cities = deligate.cities;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addCity:)];
 }
 
 - (void)viewDidUnload
@@ -54,6 +55,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void)addCity:(id)sender {
+    AddCityController *addCity = [[AddCityController alloc] init];
+    [self presentModalViewController:addCity animated:YES];
 }
 
 #pragma mark UITableViewDataSource Methods

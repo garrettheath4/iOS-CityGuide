@@ -30,7 +30,7 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)saveCity:(id)sender {
+- (IBAction)saveCity:(id)sender {
     CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
     NSMutableArray *cities = delegate.cities;
     
@@ -47,7 +47,7 @@
         CGViewController *viewController = delegate.viewController;
         [viewController.tableView reloadData];
     }
-    [delegate.navController popViewControllerAnimated:YES];
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark - View lifecycle
@@ -56,7 +56,6 @@
 {
     [super viewDidLoad];
     self.title = @"New City";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveCity:)];
 }
 
 - (void)viewDidUnload
